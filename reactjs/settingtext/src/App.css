@@ -1,0 +1,118 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+.App {
+  text-align: center;
+}
+.container {
+  
+  margin: 20px auto;
+  display: flex;
+  width: 60%;
+  justify-content: space-between;
+  border: 1px solid black;
+  padding-bottom: 10px;
+  padding: 0 20px 10px 20px
+}
+.side-left {
+  display: block;
+  width: 48%;
+}
+.side-right {
+  display: block;
+  width: 48%;
+}
+.side-left > div {
+  display: flex;
+  padding-top: 10px
+}
+.side-left > div >  span {
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-color: red;
+  margin-right: 20px;
+  cursor: pointer;
+}
+.side-right h4 {
+  padding: 5px 20px;
+  background-color: rgb(24, 162, 216);
+  display: block;
+  color: white
+  
+}
+
+.side-right > div {
+  display: flex;
+  padding-top: 10px
+}
+.side-right > div > button {
+  margin-right: 20px;
+  height: 28px;
+  display: block;
+  padding: 5px 15px;
+  border: 1px solid rgb(24, 216, 88);
+  background-color: rgba(24, 216, 88, 0.1);
+  border-radius: 5px;
+  outline: none;
+  color: rgb(0,0,0);
+  transition: 0.2s;
+  cursor: pointer;
+}
+.active {
+  border: 2px solid black;
+}
+.result {
+  text-align: center;
+}
+.result p {
+  display: inline-block;
+  padding: 20px;
+  border: 1px solid black;
+  width: 60%;
+}
+.side-right > div > button:active {
+
+  background-color:  rgba(24, 216, 88, 0.4) ;
+}
+h4 {
+  color: white;
+  padding: 5px 20px;
+  background-color: rgb(24, 216, 88);
+  display: block;
+}
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
